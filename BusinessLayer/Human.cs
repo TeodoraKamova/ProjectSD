@@ -9,12 +9,15 @@ namespace BusinessLayer
     {
         [Key]
         public int Id { get; private set; }
+
         [Required]
         [MaxLength(30)]
         public string Name { get; set; }
+
         [Required]
         [MaxLength(30)]
         public string Surname { get; set; }
+
         [Required]
         [Range(0, 130, ErrorMessage = "Age must be between 0 and 130")]
         public int Age { get; set; }

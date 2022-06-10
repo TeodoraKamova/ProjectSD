@@ -10,11 +10,14 @@ namespace BusinessLayer
        [Required]
        [Range(0, 90, ErrorMessage = "Experience must be between 0 and 90")]
         public int Experiennce { get; set; }
-        public IEnumerable<Pateint> Pateints { get; set; }
+
+        public IEnumerable<Patient> Patients { get; set; }
+
         public Doctor(string name, string surname, int age, int exp) : base(name, surname, age)
         {
             exp = Experiennce;
         }
+
         private Doctor()
         {
 

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TEDI\\Desktop\\school\\HospitalProject\\BusinessLayer\\BusinessLayer.csproj": {}
+    "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TEDI\\Desktop\\school\\HospitalProject\\BusinessLayer\\BusinessLayer.csproj": {
+    "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TEDI\\Desktop\\school\\HospitalProject\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\TEDI\\Desktop\\school\\HospitalProject\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\TEDI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TEDI\\Desktop\\school\\HospitalProject\\BusinessLayer\\obj\\",
+        "projectPath": "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Daniela Toseva\\.nuget\\packages\\",
+        "outputPath": "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\TEDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Daniela Toseva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,28 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
