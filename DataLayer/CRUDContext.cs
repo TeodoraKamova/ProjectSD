@@ -19,6 +19,18 @@ namespace DataLayer
 
         public void Create(T item)
         {
+            switch (dbSet.EntityType.ShortName())
+            {
+                case "Doctor":
+                    break;
+                case "Patient":
+                    break;
+                case "Sickness":
+                    break;
+                default:
+                    throw new ArgumentException("Type not suported!");
+            }
+
             dbSet.Add(item);
             context.SaveChanges();
         }
@@ -46,7 +58,24 @@ namespace DataLayer
 
         public IEnumerable<T> ReadAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                switch (dbSet.EntityType.ShortName())
+                {
+                    case "Doctor":
+                        return context.Doctors.Include(d => d.Patients).ToList() as IEnumerable<T>;
+                    case "Patient":
+                        return context.Patients.Include(p => p.Doctor).Include(p => p.Sickness).ToList() as IEnumerable<T>;
+                    case "Sickness":
+                        return context.Sicknesses.Include(s => s.Patients).ToList() as IEnumerable<T>;
+                    default:
+                        throw new ArgumentException("Type not suported!");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public void Update(T item)
