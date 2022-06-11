@@ -19,40 +19,61 @@ namespace DataLayer
 
         public void Create(T item)
         {
-            switch (dbSet.EntityType.ShortName())
+            try
             {
-                case "Doctor":
-                    break;
-                case "Patient":
-                    break;
-                case "Sickness":
-                    break;
-                default:
-                    throw new ArgumentException("Type not suported!");
-            }
+                switch (dbSet.EntityType.ShortName())
+                {
+                    case "Doctor":
+                        break;
+                    case "Patient":
+                        break;
+                    case "Sickness":
+                        break;
+                    default:
+                        throw new ArgumentException("Type not suported!");
+                }
 
-            dbSet.Add(item);
-            context.SaveChanges();
+                dbSet.Add(item);
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public void Delete(K key)
         {
-            dbSet.Remove((T)Read(key));
-            context.SaveChanges();
+            try
+            {
+                dbSet.Remove((T)Read(key));
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public T Read(K key)
         {
-            switch (dbSet.EntityType.Name)
+            try
             {
-                case "Doctor":
-                    return context.Doctors.Include(d => d.Patients).SingleOrDefault(d => d.Id == Convert.ToInt32(key)) as T;
-                case "Patient":
-                    return context.Patients.Include(p => p.Doctor).Include(p => p.Sickness).SingleOrDefault(p => p.Id == Convert.ToInt32(key)) as T;
-                case "Sickness":
-                    return context.Sicknesses.Include(s => s.Patients).SingleOrDefault(s => s.Id == Convert.ToInt32(key)) as T;
-                default:
-                    throw new ArgumentException("Type not suported!");
+                switch (dbSet.EntityType.Name)
+                {
+                    case "Doctor":
+                        return context.Doctors.Include(d => d.Patients).SingleOrDefault(d => d.Id == Convert.ToInt32(key)) as T;
+                    case "Patient":
+                        return context.Patients.Include(p => p.Doctor).Include(p => p.Sickness).SingleOrDefault(p => p.Id == Convert.ToInt32(key)) as T;
+                    case "Sickness":
+                        return context.Sicknesses.Include(s => s.Patients).SingleOrDefault(s => s.Id == Convert.ToInt32(key)) as T;
+                    default:
+                        throw new ArgumentException("Type not suported!");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
@@ -80,8 +101,15 @@ namespace DataLayer
 
         public void Update(T item)
         {
-            dbSet.Update(item);
-            context.SaveChanges();
+            try
+            {
+                dbSet.Update(item);
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
