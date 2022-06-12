@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace DataLayer
 {
-    class CRUDContext<T, K> : IDB<T, K> where T : class
+    public class CRUDContext<T, K> : IDB<T, K> where T : class
     {
         private DbSet<T> dbSet;
         private HospitalDBContext context;
@@ -59,7 +59,7 @@ namespace DataLayer
         {
             try
             {
-                switch (dbSet.EntityType.Name)
+                switch (dbSet.EntityType.ShortName())
                 {
                     case "Doctor":
                         return context.Doctors.Include(d => d.Patients).SingleOrDefault(d => d.Id == Convert.ToInt32(key)) as T;

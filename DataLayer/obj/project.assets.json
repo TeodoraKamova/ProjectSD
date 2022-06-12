@@ -532,6 +532,20 @@
             "rid": "win"
           }
         }
+      },
+      "BusinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0",
+          "MySql.EntityFrameworkCore": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        }
       }
     }
   },
@@ -1654,10 +1668,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLayer/BusinessLayer.csproj",
+      "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BusinessLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
@@ -1670,11 +1690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj",
-      "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\DataLayer\\DataLayer.csproj",
+      "projectName": "DataLayer",
+      "projectPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\DataLayer\\DataLayer.csproj",
       "packagesPath": "C:\\Users\\TEDI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TEDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1690,7 +1710,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

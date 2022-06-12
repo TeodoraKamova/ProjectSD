@@ -7,19 +7,19 @@ using System.Text;
 
 namespace BusinessLayer
 {
-    public class Patient : Human
-    {
-        public enum BloodTypes
+    public enum BloodTypes
         {
            A,
            B,
            O,
            AB
         }
+    public class Patient : Human
+    {
+        
         [Required]
         public BloodTypes BloodType { get; set; }
 
-        [Required]
         public Doctor Doctor { get; set; }
 
         [ForeignKey("Doctor")]
@@ -30,10 +30,9 @@ namespace BusinessLayer
         [ForeignKey("Sickness")]
         public int SicknessId { get; set; }
 
-        public Patient(string name, string surname, int age, BloodTypes bloodType, Doctor doctor) : base(name, surname, age)
+        public Patient(string name, string surname, int age, BloodTypes bloodType) : base(name, surname, age)
         {
             BloodType = bloodType;
-            Doctor = doctor;
         }
 
         private Patient()
