@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\Daniela Toseva\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\DatabasesEF\\ProjectSD\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\TEDI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Daniela Toseva\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\TEDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

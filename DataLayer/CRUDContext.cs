@@ -59,7 +59,7 @@ namespace DataLayer
         {
             try
             {
-                switch (dbSet.EntityType.Name)
+                switch (dbSet.EntityType.ShortName())
                 {
                     case "Doctor":
                         return context.Doctors.Include(d => d.Patients).SingleOrDefault(d => d.Id == Convert.ToInt32(key)) as T;
