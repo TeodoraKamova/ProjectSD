@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace DataLayer
 {
-    class CRUDContext<T, K> : IDB<T, K> where T : class
+    public class CRUDContext<T, K> : IDB<T, K> where T : class
     {
         private DbSet<T> dbSet;
         private HospitalDBContext context;
@@ -30,7 +30,7 @@ namespace DataLayer
                     case "Sickness":
                         break;
                     default:
-                        throw new ArgumentException("Type not suported!");
+                        throw new ArgumentException("Type not supported!");
                 }
 
                 dbSet.Add(item);
@@ -68,7 +68,7 @@ namespace DataLayer
                     case "Sickness":
                         return context.Sicknesses.Include(s => s.Patients).SingleOrDefault(s => s.Id == Convert.ToInt32(key)) as T;
                     default:
-                        throw new ArgumentException("Type not suported!");
+                        throw new ArgumentException("Type not supported!");
                 }
             }
             catch (Exception ex)
@@ -90,7 +90,7 @@ namespace DataLayer
                     case "Sickness":
                         return context.Sicknesses.Include(s => s.Patients).ToList() as IEnumerable<T>;
                     default:
-                        throw new ArgumentException("Type not suported!");
+                        throw new ArgumentException("Type not supported!");
                 }
             }
             catch (Exception ex)
