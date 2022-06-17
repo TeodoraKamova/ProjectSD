@@ -8,12 +8,12 @@ using System.Text;
 namespace BusinessLayer
 {
     public enum BloodTypes
-    {
-        A,
-        B,
-        O,
-        AB
-    }
+        {
+           A,
+           B,
+           O,
+           AB
+        }
     public class Patient : Human
     {
         
@@ -24,10 +24,12 @@ namespace BusinessLayer
 
         public Sickness Sickness { get; set; }
 
+
         public Patient(string name, string surname, int age, BloodTypes bloodType) : base(name, surname, age)
         {
             BloodType = bloodType;
         }
+
         private Patient()
         {
 
