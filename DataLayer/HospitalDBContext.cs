@@ -20,7 +20,7 @@ namespace DataLayer
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseMySQL(@"Server=127.0.0.1;Port=3306;Database=HospitalDB;Uid=root;Pwd=root;");
+            optionsBuilder.UseMySQL(@"Server=127.0.0.1;Port=3306;Database=HospitalDB;Uid=root;Pwd=root;");
         }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Patient> Patients { get; set; }

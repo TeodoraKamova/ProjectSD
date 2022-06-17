@@ -64,7 +64,7 @@ namespace DataLayer
                     case "Doctor":
                         return context.Doctors.Include(d => d.Patients).SingleOrDefault(d => d.Id == Convert.ToInt32(key)) as T;
                     case "Patient":
-                        return context.Patients.Include(p => p.Doctor).Include(p => p.Sickness).SingleOrDefault(p => p.Id == Convert.ToInt32(key)) as T;
+                        return context.Patients.Include(p => p.Sickness).Include(p => p.Doctor).SingleOrDefault(p => p.Id == Convert.ToInt32(key)) as T;
                     case "Sickness":
                         return context.Sicknesses.Include(s => s.Patients).SingleOrDefault(s => s.Id == Convert.ToInt32(key)) as T;
                     default:

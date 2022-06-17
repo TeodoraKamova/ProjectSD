@@ -70,8 +70,6 @@ namespace PresentationLayer.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DocId"] = new SelectList(_context.Doctors, "Id", "Name", patient.DocId);
-            ViewData["SicknessId"] = new SelectList(_context.Sicknesses, "Id", "Name", patient.SicknessId);
             return View(patient);
         }
 
@@ -88,8 +86,6 @@ namespace PresentationLayer.Controllers
             {
                 return NotFound();
             }
-            ViewData["DocId"] = new SelectList(_context.Doctors, "Id", "Name", patient.DocId);
-            ViewData["SicknessId"] = new SelectList(_context.Sicknesses, "Id", "Name", patient.SicknessId);
             return View(patient);
         }
 
@@ -125,8 +121,6 @@ namespace PresentationLayer.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DocId"] = new SelectList(_context.Doctors, "Id", "Name", patient.DocId);
-            ViewData["SicknessId"] = new SelectList(_context.Sicknesses, "Id", "Name", patient.SicknessId);
             return View(patient);
         }
 
