@@ -25,9 +25,10 @@ namespace BusinessLayer
         public Sickness Sickness { get; set; }
 
 
-        public Patient(string name, string surname, int age, BloodTypes bloodType) : base(name, surname, age)
+        public Patient(string name, string surname, int age, BloodTypes bloodType, Doctor doctor) : base(name, surname, age)
         {
             BloodType = bloodType;
+            Doctor = doctor;
         }
 
         private Patient()

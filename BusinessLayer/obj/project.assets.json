@@ -1670,11 +1670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\TEDI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TEDI\\Downloads\\ProjectSD-main\\ProjectSD-main\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TEDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
