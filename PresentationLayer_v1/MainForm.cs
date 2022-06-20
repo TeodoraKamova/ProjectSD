@@ -39,7 +39,7 @@ namespace PresentationLayer_v1
 
         private void PatientsBtn_Click(object sender, EventArgs e)
         {
-            PatientsForm patientsForm = new PatientsForm(patientContext);
+            PatientsForm patientsForm = new PatientsForm(patientContext, doctorContext);
             patientsForm.ShowDialog();
         }
 

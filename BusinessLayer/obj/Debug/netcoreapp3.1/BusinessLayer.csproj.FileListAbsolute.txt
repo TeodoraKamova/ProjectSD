@@ -24,3 +24,16 @@ C:\Users\TEDI\Source\Repos\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\Busin
 C:\Users\TEDI\Source\Repos\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
 C:\Users\TEDI\Source\Repos\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
 C:\Users\TEDI\Source\Repos\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.genruntimeconfig.cache
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.deps.json
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.runtimeconfig.json
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.runtimeconfig.dev.json
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.AssemblyReference.cache
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
+D:\Programming\DatabasesEF\ProjectSD\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.genruntimeconfig.cache
