@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj": {}
+    "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\TEDI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TEDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\DataLayer\\DataLayer.csproj",
+        "projectPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\TEDI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TEDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -104,8 +104,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj": {
+    "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj",
+        "projectUniqueName": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj",
         "projectName": "PresentationLayer_v1",
-        "projectPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj",
+        "projectPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj",
         "packagesPath": "C:\\Users\\TEDI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\PresentationLayer_v1\\obj\\",
+        "outputPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\PresentationLayer_v1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TEDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -184,11 +184,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\DataLayer\\DataLayer.csproj"
+              "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\DataLayer\\DataLayer.csproj"
               }
             }
           }

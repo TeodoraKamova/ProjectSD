@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fcGRVq33UTsPFKy3k+XmbZi286fChPCZrxBdkkEuprOwtA+Wuax/gkQiIyA3pD0dcvP4c95EFjroYdu0E0eukA==",
+  "dgSpecHash": "c6ObWsiA6R6Mjs/Rayd1+/fDCouD37ERMnxTjzFUHAAUj6nQtZWjbw4cAUdPHoJUpoPBNPToobChRlNM9nLuQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\TEDI\\Source\\Repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj",
+  "projectFilePath": "C:\\Users\\TEDI\\source\\repos\\ProjectSD\\PresentationLayer_v1\\PresentationLayer_v1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TEDI\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\TEDI\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
