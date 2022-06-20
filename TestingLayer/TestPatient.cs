@@ -29,7 +29,7 @@ namespace TestingLayer
         public void TestCreatePatient()
         {
             int patBef = PatientContext.ReadAll().Count();
-            PatientContext.Create(new Patient("Zaharinka", "Elkova", 42,BloodTypes.B));
+            PatientContext.Create(new Patient("Zaharinka", "Elkova", 42,BloodTypes.B,null));
 
             int patAft = PatientContext.ReadAll().Count();
 
@@ -39,7 +39,7 @@ namespace TestingLayer
         [Test]
         public void TestReadPatient()
         {
-            PatientContext.Create(new Patient("Ico","Sapunov",45, BloodTypes.O));
+            PatientContext.Create(new Patient("Ico","Sapunov",45, BloodTypes.O, null));
 
             Patient pat = PatientContext.Read(1);
 
@@ -49,7 +49,7 @@ namespace TestingLayer
         [Test]
         public void TestUpdatePatient()
         {
-            PatientContext.Create(new Patient("Mara", "Chushkova", 51, BloodTypes.A));
+            PatientContext.Create(new Patient("Mara", "Chushkova", 51, BloodTypes.A,null));
 
             Patient pat = PatientContext.Read(1);
 
@@ -66,7 +66,7 @@ namespace TestingLayer
         [Test]
         public void TestDeletePatient()
         {
-            PatientContext.Create(new Patient("Riki", "Masata", 42,BloodTypes.B));
+            PatientContext.Create(new Patient("Riki", "Masata", 42,BloodTypes.B, null));
 
             int patkBefore = PatientContext.ReadAll().Count();
 
