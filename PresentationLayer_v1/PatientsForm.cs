@@ -15,17 +15,19 @@ namespace PresentationLayer_v1
     {
         private Patient selectedPatient;
         private CRUDContext<Patient, int> patientsContext;
-
         private CRUDContext<Doctor, int> doctorsContext;
+        private CRUDContext<Sickness, int> sicknessContext;
 
-        public PatientsForm(CRUDContext<Patient, int> patientsContext, CRUDContext<Doctor, int> doctorsContext)
+        public PatientsForm(CRUDContext<Patient, int> patientsContext, CRUDContext<Doctor, int> doctorsContext,
+            CRUDContext<Sickness, int> sicknessContext)
         {
             InitializeComponent();
             
             this.patientsContext = patientsContext;
             this.doctorsContext = doctorsContext;
+            this.sicknessContext = sicknessContext;
             bloodTypesComboBox.DataSource = Enum.GetValues(typeof(BloodTypes));
-            
+            LoadSickness();
             LoadDoctors();
             LoadPatients();
         }
@@ -40,6 +42,13 @@ namespace PresentationLayer_v1
             doctorsComboBox.DataSource = doctorsContext.ReadAll();
             doctorsComboBox.DisplayMember = "Name";
             doctorsComboBox.ValueMember = "Id";
+        }
+
+        private void LoadSickness()
+        {
+            sicknessComboBox.DataSource = sicknessContext.ReadAll();
+            sicknessComboBox.DisplayMember = "Name";
+
         }
 
         private void createBtn_Click(object sender, EventArgs e)
@@ -193,5 +202,36 @@ namespace PresentationLayer_v1
             e.Value = Name + " " + Surname;
         }
 
+        private void sicknessBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (selectedPatient != null && sicknessComboBox.SelectedItem != null)
+                {
+                    if (!(selectedPatient.Sickness == (Sickness)sicknessComboBox.SelectedItem))
+                    {
+                        selectedPatient.Sickness = (Sickness)sicknessComboBox.SelectedItem;
+
+                        patientsContext.Update(selectedPatient);
+
+                        MessageBox.Show(string.Format("Sickness added successfully!"),
+                            ":)", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("This product is already added to favourites!", ":)", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("You must choose customer and product!", ":|", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+        }
     }
 }

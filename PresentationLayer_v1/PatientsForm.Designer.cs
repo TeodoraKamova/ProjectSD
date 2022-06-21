@@ -43,6 +43,9 @@
             this.bloodTypesComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.doctorsComboBox = new System.Windows.Forms.ComboBox();
+            this.sicknessComboBox = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.sicknessBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.patientsDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ageNumUpDown)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +54,7 @@
             // 
             this.nameTxtBox.Location = new System.Drawing.Point(157, 49);
             this.nameTxtBox.Name = "nameTxtBox";
-            this.nameTxtBox.Size = new System.Drawing.Size(125, 27);
+            this.nameTxtBox.Size = new System.Drawing.Size(166, 27);
             this.nameTxtBox.TabIndex = 0;
             // 
             // label1
@@ -76,7 +79,7 @@
             // 
             this.surnameTxtBox.Location = new System.Drawing.Point(157, 123);
             this.surnameTxtBox.Name = "surnameTxtBox";
-            this.surnameTxtBox.Size = new System.Drawing.Size(125, 27);
+            this.surnameTxtBox.Size = new System.Drawing.Size(166, 27);
             this.surnameTxtBox.TabIndex = 2;
             // 
             // label3
@@ -90,7 +93,7 @@
             // 
             // createBtn
             // 
-            this.createBtn.Location = new System.Drawing.Point(47, 393);
+            this.createBtn.Location = new System.Drawing.Point(47, 472);
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(94, 29);
             this.createBtn.TabIndex = 6;
@@ -100,7 +103,7 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(188, 393);
+            this.updateBtn.Location = new System.Drawing.Point(188, 472);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(94, 29);
             this.updateBtn.TabIndex = 7;
@@ -110,7 +113,7 @@
             // 
             // deleteBtn
             // 
-            this.deleteBtn.Location = new System.Drawing.Point(320, 393);
+            this.deleteBtn.Location = new System.Drawing.Point(320, 472);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(94, 29);
             this.deleteBtn.TabIndex = 8;
@@ -120,7 +123,7 @@
             // 
             // exitBtn
             // 
-            this.exitBtn.Location = new System.Drawing.Point(671, 393);
+            this.exitBtn.Location = new System.Drawing.Point(671, 472);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(94, 29);
             this.exitBtn.TabIndex = 9;
@@ -151,7 +154,7 @@
             // 
             this.ageNumUpDown.Location = new System.Drawing.Point(157, 195);
             this.ageNumUpDown.Name = "ageNumUpDown";
-            this.ageNumUpDown.Size = new System.Drawing.Size(125, 27);
+            this.ageNumUpDown.Size = new System.Drawing.Size(85, 27);
             this.ageNumUpDown.TabIndex = 13;
             // 
             // bloodTypesComboBox
@@ -159,7 +162,7 @@
             this.bloodTypesComboBox.FormattingEnabled = true;
             this.bloodTypesComboBox.Location = new System.Drawing.Point(157, 252);
             this.bloodTypesComboBox.Name = "bloodTypesComboBox";
-            this.bloodTypesComboBox.Size = new System.Drawing.Size(125, 28);
+            this.bloodTypesComboBox.Size = new System.Drawing.Size(85, 28);
             this.bloodTypesComboBox.TabIndex = 14;
             // 
             // label5
@@ -180,11 +183,41 @@
             this.doctorsComboBox.TabIndex = 16;
             this.doctorsComboBox.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.doctorsComboBox_Format);
             // 
+            // sicknessComboBox
+            // 
+            this.sicknessComboBox.FormattingEnabled = true;
+            this.sicknessComboBox.Location = new System.Drawing.Point(157, 377);
+            this.sicknessComboBox.Name = "sicknessComboBox";
+            this.sicknessComboBox.Size = new System.Drawing.Size(166, 28);
+            this.sicknessComboBox.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(47, 380);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(63, 20);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Sickness";
+            // 
+            // sicknessBtn
+            // 
+            this.sicknessBtn.Location = new System.Drawing.Point(356, 376);
+            this.sicknessBtn.Name = "sicknessBtn";
+            this.sicknessBtn.Size = new System.Drawing.Size(103, 29);
+            this.sicknessBtn.TabIndex = 19;
+            this.sicknessBtn.Text = "Add sickness";
+            this.sicknessBtn.UseVisualStyleBackColor = true;
+            this.sicknessBtn.Click += new System.EventHandler(this.sicknessBtn_Click);
+            // 
             // PatientsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 535);
+            this.Controls.Add(this.sicknessBtn);
+            this.Controls.Add(this.sicknessComboBox);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.doctorsComboBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.bloodTypesComboBox);
@@ -226,5 +259,8 @@
         private System.Windows.Forms.ComboBox bloodTypesComboBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox doctorsComboBox;
+        private System.Windows.Forms.ComboBox sicknessComboBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button sicknessBtn;
     }
 }
